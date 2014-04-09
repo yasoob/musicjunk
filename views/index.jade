@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    nav
+        form(method="get",action="/search",id="search")
+            a(href="/"): img(src="./images/back.png") 
+            input(name="q",type="text",size="40",placeholder="",class='search')
+    h1= title
+    p Welcome to Music Junkie!

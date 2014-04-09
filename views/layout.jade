@@ -1,0 +1,22 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/player.css')
+		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css')
+		script(src="http://code.jquery.com/jquery-1.11.0.min.js")
+		script(src="/javascripts/mediaelement-and-player.min.js")
+		script(src="/javascripts/app.js")
+	body
+		header
+			div.player-wrapper
+				span.player
+					a(href="#"): i(class="fa fa-step-backward")
+					a(href="#"): i(class="fa fa-play")
+					a(href="#"): i(class="fa fa-step-forward")
+					span.song sample
+					div(class="audio-player")
+						audio(id="audio-player",src="#",type="audio/mp3",controls="controls")
+		section
+			block content

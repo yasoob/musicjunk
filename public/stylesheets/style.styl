@@ -1,0 +1,129 @@
+body
+	padding: 50px
+	font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
+	background: #002B36;
+
+p
+	color white
+	font-size 16px
+
+h1 
+	color white
+	font-size 30px
+a
+	color: white
+	text-decoration none
+	font-size 16px
+header
+	top 0
+	left 0
+	position: fixed
+	width 100%
+	margin 0 auto
+	text-align center
+	background-color #06232A
+	z-index 1
+	font-family: 'Helvetica','Arial',sans-serif;
+	font-weight: bold;
+	border-bottom: 1px solid #554c4c;
+.player-wrapper
+	width 100%
+	margin 0 auto
+	height: 33px;
+.player-wrapper p
+	margin 7px
+.audio-player
+	text-align: center;
+	display none
+p.result
+	margin-left 20px
+	margin-bottom 10px
+div.results
+	border-left 1px white groove
+nav a 
+	margin-right 10px
+nav a img 
+	border-radius: 100px;
+	transition: box-shadow 0.2s;
+	width: 42px;
+	height: 42px;
+	margin-top: 1px;
+nav a:hover img
+	border-radius 100px
+	box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.13)
+
+input.search
+	border-radius: 100px;
+	padding: 10px 8px 12px 11px
+	background-color: rgba(0, 0, 0, 0);
+	border: 2px inset rgba(255, 255, 255, 0);
+	outline: none;
+	width: 20px
+	transition all .3s;
+	background-image: url('../images/search.png');
+	background-repeat: no-repeat;
+	position absolute
+	color transparent
+	background-position -1px -2px
+
+input.search:hover
+	border-radius 200px
+	box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.13)
+
+input.search:focus
+	width 200px
+	background-color: rgba(0, 0, 0, 0.17)
+	box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.13)
+	color: rgba(255, 255, 255, 0.81);
+	padding-left 50px
+form 
+	display inline
+span.album
+	color grey
+span.controls
+	float right
+span.controls a
+	margin 10px
+header span
+	color #fff
+	font-size 16px
+	white-space: nowrap;
+	margin: 50px
+header span.player a:nth-child(2)
+	padding-right 3px
+header span.player a:nth-child(3)
+	border-right: 1px solid #554C4C;
+header span.player a
+	padding: 8px
+	border-left: 1px solid #554C4C;
+header span.song
+	padding 9px
+	padding-left 20px
+	padding-right 20px
+	margin 10px
+	border-right 1px solid #554c4c
+i
+	padding 8px
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 1);
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #06232a;
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); */
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(50,43,95,0.71);
+}
+

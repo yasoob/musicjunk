@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    nav
+        form(method="get",action="/search",id="search")
+            a(href="/"): img(src="./images/back.png") 
+            input(name="q",type="text",size="40",placeholder="",class='search') 
+    h1= title
+    - if (typeof results == "undefined")
+        p Nothing found
+    - else     
+        div.results: for result in results
+            - if (result.title.length>50){
+            -    result.title = result.title.substring(0,50)+'...'
+            - }
+            - if (result.artist)
+                p.result 
+                    a(href="#{result.url}") #{result.title} 
+                    span.album - #{result.artist}
+                    span.controls
+                        a(href="#",class="play"): i(class="fa fa-play")
+                        a(href="#{result.url}",download="#{result.title}.mp3"): i(class="fa fa-download")
+            - else
+                p.result: a(href="#{result.url}") #{result.title} 
+    
